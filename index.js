@@ -29,7 +29,7 @@ const colorCodes = {
   4: 'yellow',
   3: 'cyan',
   2: 'green',
-  1: 'green',
+  1: 'blue',
   0: 'yellow'
 };
 
