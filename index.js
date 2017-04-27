@@ -41,7 +41,8 @@ function dev(opts) {
   return async function logger(ctx, next) {
     // request
     const start = new Date;
-    console.log('  ' + chalk.gray('<--')
+    console.log(chalk.bold("[" + new Date().toISOString() + "]")
+	  + ' ' + chalk.gray('<--')
       + ' ' + chalk.bold('%s')
       + ' ' + chalk.gray('%s'),
         ctx.method,
