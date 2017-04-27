@@ -1,5 +1,5 @@
 
-# koa-logger
+# koa-logger-md
 
 [![npm version][npm-image]][npm-url]
 [![build status][travis-image]][travis-url]
@@ -9,26 +9,26 @@
 ___Notice: `koa-logger@2` supports `koa@2`; if you want to use this module with `koa@1`, please use `koa-logger@1`.___
 
 ```
-<-- GET /
---> GET / 200 835ms 746b
-<-- GET /
---> GET / 200 960ms 1.9kb
-<-- GET /users
---> GET /users 200 357ms 922b
-<-- GET /users?page=2
---> GET /users?page=2 200 466ms 4.66kb
+[2017-04-27T09:18:01.344Z]<-- GET /
+[2017-04-27T09:18:02.344Z]--> GET / 200 835ms 746b
+[2017-04-27T09:18:03.344Z]<-- GET /
+[2017-04-27T09:18:04.344Z]--> GET / 200 960ms 1.9kb
+[2017-04-27T09:18:05.344Z]<-- GET /users
+[2017-04-27T09:18:06.344Z]--> GET /users 200 357ms 922b
+[2017-04-27T09:18:07.344Z]<-- GET /users?page=2
+[2017-04-27T09:18:09.344Z]--> GET /users?page=2 200 466ms 4.66kb
 ```
 
 ## Installation
 
 ```js
-$ npm install koa-logger
+$ npm install koa-logger-md
 ```
 
 ## Example
 
 ```js
-const logger = require('koa-logger')
+const logger = require('koa-logger-md')
 const Koa = require('koa')
 
 const app = new Koa()
